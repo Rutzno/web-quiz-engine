@@ -15,4 +15,11 @@ JDBC API. Supports embedded and server modes as well as browser based console ap
 It's used by the most developer in dev environment to test the application.
 - _**Spring security**_ to handle authentication and authorization of a user to different 
   services.
+- _**Postman**_ to test our _API_ by creating and sending request as _client_. 
+  [Postman](https://www.postman.com) is a collaboration platform for API development. 
+  It's a client REST.
 - And other technologies in Spring Boot platform.
+
+For the rest of this project, we could develop a web/mobile client for this web service.
+
+[Postman]: https://www.postman.com
