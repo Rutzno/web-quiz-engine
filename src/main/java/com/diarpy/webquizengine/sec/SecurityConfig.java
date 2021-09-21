@@ -40,10 +40,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic()
                 .and()
                 .authorizeRequests()
-                    .mvcMatchers("/api/register").permitAll()
+                    .antMatchers("/api/register/**").permitAll()
                     .mvcMatchers("/api/quizzes/**").authenticated();
     }
-
 
     @Bean
     public PasswordEncoder passwordEncoder() {
