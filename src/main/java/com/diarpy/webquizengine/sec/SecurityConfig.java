@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic()
                 .and()
                 .authorizeRequests()
-                    .antMatchers("/api/register/**").permitAll()
+                    .mvcMatchers("/api/register/**").permitAll()
                     .antMatchers("/api/quizzes/**").authenticated();
     }
 
